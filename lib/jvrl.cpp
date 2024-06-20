@@ -24,8 +24,8 @@ int cmdd(string& arg) {
 
 // Function to run the Java class
 int run_class(const string& arg) {
-    string nodecmd = "java " + arg;
-    int result = system(nodecmd.c_str());
+    string runcmd = "java " + arg;
+    int result = system(runcmd.c_str());
 
     if (result != 0) {
         cerr << "Error: Failed to execute the java command." << endl;
