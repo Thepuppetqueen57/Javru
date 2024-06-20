@@ -27,13 +27,13 @@ int main(int argc, char *argv[]) {
         return cmdd_result;
     }
 
-    // Call the node execution function
-    int noderesult = run_class(arg);
+    // Call the run execution function
+    int runresult = run_class(arg);
 
-    // Check if the node command was successful
-    if (noderesult != 0) {
+    // Check if the run command was successful
+    if (runresult != 0) {
         cerr << "Error: Failed to execute the java command." << endl;
-        return noderesult;
+        return runresult;
     }
 
     // Call the delete function
