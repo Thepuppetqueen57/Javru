@@ -48,11 +48,21 @@ inline int run_class(const std::string& arg, const std::string& language) {
 // Function to delete the generated class or jar file
 inline int delete_file(const std::string& arg, const std::string& language) {
     std::string deletecmd;
+
+#ifdef _WIN32 // Check if we are on a Windows system
     if (language == "java") {
         deletecmd = "del " + arg + ".class";
     } else if (language == "kotlin") {
         deletecmd = "del " + arg + ".jar";
     }
+#else // Assume a Unix-like system if not Windows
+    if (language == "java") {
+        deletecmd = "rm " + arg + ".class";
+    } else if (language == "kotlin") {
+        deletecmd = "rm " + arg + ".jar";
+    }
+#endif
+
     int result = system(deletecmd.c_str());
 
     if (result != 0) {
