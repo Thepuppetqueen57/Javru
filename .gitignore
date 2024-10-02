@@ -401,8 +401,10 @@ FodyWeavers.xsd
 .vscode
 
 # exes
-a.exe
-tsnode.exe
+*.exe
+*.out
 
 # Misc stuff
 move.cmd
+*.class
+*.jar
