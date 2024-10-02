@@ -4,7 +4,7 @@
 # How to build from source
  Make sure you have [gcc](https://gcc.gnu.org/releases.html) installed.
 
- First download the source of javru and run `g++ main.cpp lib/jvrl.cpp` in cmd or pwsh.
+ First download the source of javru and run `g++ main.cpp` in cmd or pwsh.
 
  rename the exe to what you want the command to be. (the official command is javru)
 
@@ -27,7 +27,9 @@
 
 # How to use
  Very simple.
+ 
  Make sure you have [the jvm and jdk](https://www.java.com) and [the kotlin compiler](https://kotlinlang.org/docs/command-line.html) installed
+ 
  Then just go to a dir with a java file and run what you set the exe name as and then the name of your java file
 
 # Disclaimer
