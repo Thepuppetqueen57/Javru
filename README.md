@@ -1,3 +1,8 @@
+# Discontinued
+ This is useless. When I made this I had no idea about maven or gradle.
+
+ This has been archived.
+
 # Javru
  A little project I made to run .java and .kt files easily. test.java and test.kt is for testing the program.
 
